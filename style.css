@@ -1,10 +1,12 @@
 body {
     background-color: #1d2733;
+    transition: background-color 0.3s ease;
 }
 
 .flexcontinor {
     display: flex;
     flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .profileclass {
@@ -12,6 +14,7 @@ body {
     padding: 8px;
     margin: 0;
     background-color: #44525F;
+    animation: slideIn 1s ease-out;
 }
 
 .profilephoto {
@@ -36,23 +39,27 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-right: 5px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .space {
     height: 15px;
     background-color: #151E27;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .markimgg {
     height: 30px;
     width: 30px;
     align-self: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .info {
     background-color: #1d2733;
     margin-left: 30px;
     margin-top: 10px;
+    animation: slideIn 1s ease-out;
 }
 
 .title {
@@ -60,6 +67,7 @@ h1 {
     font-weight: normal;
     font-size: 21px;
     margin: 10px 0px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .infot {
@@ -69,18 +77,21 @@ h1 {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .infor {
     color: white;
     font-size: 18px;
     margin: 0;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .show {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .showt {
@@ -91,6 +102,7 @@ h1 {
     display: inline-block; 
     border-bottom: 2px solid white; 
     padding-bottom: 2px; 
+    animation: fadeIn 1s ease-in-out;
 }
 
 .grid-container {
@@ -98,6 +110,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     gap: 10px;
     padding: 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .grid-item img {
@@ -132,5 +145,23 @@ h1 {
 @media (min-width: 1025px) {
     .grid-container {
         gap: 15px; 
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
