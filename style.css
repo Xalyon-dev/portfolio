@@ -11,7 +11,7 @@ body {
 
 .profileclass {
     display: flex;
-    padding: 0px;
+    padding: 8px;
     margin: 0;
     background-color: #44525F;
     animation: slideIn 1s ease-out;
